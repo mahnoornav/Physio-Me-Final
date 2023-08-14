@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Patient Login</title>
+
+    <!--<form> element is used to create an HTML form for user input-->
+    <!--label is the "variable name" accociated with the input of the user??-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFd2EE;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 100px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        
+        h1 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+        
+        label, input {
+            display: block;
+            margin-bottom: 10px;
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F48FB1;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            background-color: #DE3163;
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        class="container">
+        <h1>Login</h1>
+
+        <form action="login_process.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" required>
+
+            <a href="ClinicFinder.html" class="btn">Log In</a>
+        </form>
+
+        <p>Go back to the welcome page:</p>
+        <a href="homepage.html" class="btn">Back</a>
+    </div>
+</body>
+</html>

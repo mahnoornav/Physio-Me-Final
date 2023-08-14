@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFd2EE;
+            margin: 10px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            padding: 200px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-top: 500px
+        }
+        
+        h1 {
+            color: #333;
+            margin-top: 0px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label, input, select {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #F48FB1;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        .btn:hover {
+            background-color: #DE3163;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Register</h1>
+
+        <form action="register_process.php" method="post">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" required>
+            
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            
+            <label for="healthCardNumber">Health Card Number:</label>
+            <input type="text" id="healthCardNumber" name="healthCardNumber" required>
+            
+            <label for="insuranceCompany">Insurance Company:</label>
+            <input type="text" id="insuranceCompany" name="insuranceCompany" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <a href="ClinicFinder.html" class="btn">Register</a>
+        </form>
+ 
+        <p>Go back to the welcome page:</p>
+        <a href="homepage.html" class="btn">Back</a>
+    </div>
+
+</body>
+</html>
